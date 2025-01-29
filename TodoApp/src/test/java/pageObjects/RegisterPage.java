@@ -4,9 +4,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class LoginPage extends BasePage{
-	
-	public LoginPage(WebDriver driver) {
+public class RegisterPage extends BasePage{
+
+	public RegisterPage(WebDriver driver) {
 		super(driver);
 	}
 	
@@ -15,12 +15,9 @@ public class LoginPage extends BasePage{
 	
 	@FindBy(id="password")
 	WebElement txtPassword;
-	
-	@FindBy(id="register-button")
+
+	@FindBy(xpath = "//button[text()='Register']")
 	WebElement btnRegister;
-	
-	@FindBy(xpath = "//button[text()='login']")
-	WebElement btnLogin;
 	
 	public void setUsername(String username){
 		txtUsername.sendKeys(username);	
@@ -30,11 +27,9 @@ public class LoginPage extends BasePage{
 		txtPassword.sendKeys(password);
 	}
 	
-	public void clickLogin() {
-		btnLogin.click();
-	}
-	
 	public void clickRegister() {
 		btnRegister.click();
 	}
+	
+
 }
