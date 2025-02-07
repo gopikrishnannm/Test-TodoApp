@@ -7,10 +7,10 @@ public class RegisterTest extends BaseClass{
 	
 	
 	@Test(dataProvider="usernameAndPasswordProvider")
-	public void test_RegisterWithValidAndInvalidUsernames(String username, boolean isValid) {
+	public void test_RegisterWithValidAndInvalidUsernames(String username,String password, boolean isValid) {
 		
 		if(isValid) {
-			System.out.println("Testing with valid Username" + );
+			System.out.println("Testing with valid Username");
 		}
 		
 	}
@@ -19,10 +19,11 @@ public class RegisterTest extends BaseClass{
 	@DataProvider(name="usernameAndPasswordProvider")
 	public Object[][] usernameProvider(){
 		return new Object[][] {
-			{"validUser",true},
-			{"1invalidUser",false}
-			{""}
-		}
+			{"validUser","validUser",true},
+			{"1invalidUser","1invalidUser",false},
+			{"invalidPassword","123",false},
+			{"invalidUsernameandPassword", "abc",false}
+		};
 	}
 	
 	

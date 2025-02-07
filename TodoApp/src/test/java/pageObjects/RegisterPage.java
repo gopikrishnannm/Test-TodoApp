@@ -1,5 +1,7 @@
 package pageObjects;
 
+import java.util.NoSuchElementException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -19,6 +21,12 @@ public class RegisterPage extends BasePage{
 	@FindBy(xpath = "//button[text()='Register']")
 	WebElement btnRegister;
 	
+	@FindBy(className = "success-message")
+	WebElement successMsg;
+	
+	@FindBy(className = "failure-message")
+	WebElement failureMsg;
+	
 	public void setUsername(String username){
 		txtUsername.sendKeys(username);	
 	}
@@ -29,6 +37,24 @@ public class RegisterPage extends BasePage{
 	
 	public void clickRegister() {
 		btnRegister.click();
+	}
+	
+	public boolean isSuccessMessageDisplayed() {
+		try {
+			return successMsg.isDisplayed();
+		}
+		catch(NoSuchElementException e) {
+			return false;
+		}
+	}
+	
+	public boolean isFailureMessageDisplayed() {
+		try {
+			return failureMsg.isDisplayed();
+		}
+		catch(NoSuchElementException e) {
+			return false;
+		}
 	}
 	
 
