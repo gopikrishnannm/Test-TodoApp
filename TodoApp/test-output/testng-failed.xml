@@ -5,13 +5,13 @@
     <parameter name="os" value="Windows"/>
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="testCases.EndToEndTestCase">
+      <class name="testCases.LoginTestDDT">
         <methods>
-          <include name="verifyE2EFuncionality"/>
           <include name="setup"/>
           <include name="tearDown"/>
+          <include name="verify_loginDDT"/>
         </methods>
-      </class> <!-- testCases.EndToEndTestCase -->
+      </class> <!-- testCases.LoginTestDDT -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

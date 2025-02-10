@@ -5,7 +5,8 @@
   	<parameter name="os" value="Windows"/>
   	<parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="testCases.EndToEndTestCase"/>
+    <!-- <class name="testCases.EndToEndTestCase"/> -->
+      <class name="testCases.LoginTestDDT"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

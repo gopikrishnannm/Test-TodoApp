@@ -1,39 +1,819 @@
-2025-02-09 16:48:32 INFO  EndToEndTestCase:20 - Starting Of E2E TC
-2025-02-09 16:48:32 INFO  EndToEndTestCase:24 - Navigate to Register Page
-2025-02-09 16:49:57 INFO  EndToEndTestCase:20 - Starting Of E2E TC
-2025-02-09 16:49:57 INFO  EndToEndTestCase:24 - Navigate to Register Page
-2025-02-09 16:49:58 ERROR EndToEndTestCase:40 - error
-2025-02-09 16:49:58 DEBUG EndToEndTestCase:41 - debug logs
-2025-02-09 18:14:00 INFO  EndToEndTestCase:21 - Starting Of E2E TC
-2025-02-09 18:14:00 INFO  EndToEndTestCase:25 - Navigate to Register Page
-2025-02-09 18:14:01 ERROR EndToEndTestCase:41 - error
-2025-02-09 18:14:01 DEBUG EndToEndTestCase:42 - debug logs
-2025-02-09 18:14:25 INFO  EndToEndTestCase:21 - Starting Of E2E TC
-2025-02-09 18:14:25 INFO  EndToEndTestCase:25 - Navigate to Register Page
-2025-02-09 18:15:23 INFO  EndToEndTestCase:21 - Starting Of E2E TC
-2025-02-09 18:15:23 INFO  EndToEndTestCase:25 - Navigate to Register Page
-2025-02-09 18:15:24 ERROR EndToEndTestCase:41 - error
-2025-02-09 18:15:24 DEBUG EndToEndTestCase:42 - debug logs
-2025-02-09 18:17:00 INFO  EndToEndTestCase:21 - Starting Of E2E TC
-2025-02-09 18:17:00 INFO  EndToEndTestCase:25 - Navigate to Register Page
-2025-02-09 18:18:15 INFO  EndToEndTestCase:21 - Starting Of E2E TC
-2025-02-09 18:18:15 INFO  EndToEndTestCase:25 - Navigate to Register Page
-2025-02-09 18:27:28 INFO  EndToEndTestCase:21 - Starting Of E2E TC
-2025-02-09 18:27:28 INFO  EndToEndTestCase:25 - Navigate to Register Page
-2025-02-09 18:27:28 DEBUG EndToEndTestCase:32 - Entering registration details
-2025-02-09 18:27:28 INFO  EndToEndTestCase:50 - Navigating back and logging in with new user
-2025-02-09 18:27:28 INFO  EndToEndTestCase:58 - Navigating to Todo Management
-2025-02-09 18:27:31 INFO  EndToEndTestCase:21 - Starting Of E2E TC
-2025-02-09 18:27:31 INFO  EndToEndTestCase:25 - Navigate to Register Page
-2025-02-09 18:27:31 DEBUG EndToEndTestCase:32 - Entering registration details
-2025-02-09 18:27:31 INFO  EndToEndTestCase:50 - Navigating back and logging in with new user
-2025-02-09 18:27:32 INFO  EndToEndTestCase:58 - Navigating to Todo Management
-2025-02-09 18:27:32 DEBUG EndToEndTestCase:65 - Filling new Todo details
-2025-02-09 18:27:33 INFO  EndToEndTestCase:85 - Navigating to update Todo
-2025-02-09 18:27:34 INFO  EndToEndTestCase:109 - Logging out and deleting account
-2025-02-09 18:27:35 INFO  EndToEndTestCase:128 - End-to-End Test Case Execution Completed
-2025-02-09 18:28:51 INFO  EndToEndTestCase:21 - Starting Of E2E TC
-2025-02-09 18:28:51 INFO  EndToEndTestCase:25 - Navigate to Register Page
-2025-02-09 18:28:51 DEBUG EndToEndTestCase:32 - Entering registration details
-2025-02-09 18:28:52 INFO  EndToEndTestCase:50 - Navigating back and logging in with new user
-2025-02-09 18:28:52 INFO  EndToEndTestCase:58 - Navigating to Todo Management
+2025-02-10 21:41:13 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:41:13 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:41:13 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:41:13 TRACE XBeanDebug:199 - Loading type system org.apache.poi.schemas.ooxml.system.ooxml
+2025-02-10 21:41:13 TRACE XBeanDebug:199 - Loading type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+2025-02-10 21:41:13 TRACE XBeanDebug:199 - Loading type system org.apache.xmlbeans.metadata.system.sXMLLANG
+2025-02-10 21:41:13 TRACE XBeanDebug:199 - Loading type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+2025-02-10 21:41:13 TRACE XBeanDebug:199 - Loading type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+2025-02-10 21:41:13 TRACE XBeanDebug:237 - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+2025-02-10 21:41:13 TRACE XBeanDebug:209 - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+2025-02-10 21:41:13 TRACE XBeanDebug:237 - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+2025-02-10 21:41:13 TRACE XBeanDebug:209 - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+2025-02-10 21:41:13 TRACE XBeanDebug:237 - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLLANG
+2025-02-10 21:41:13 TRACE XBeanDebug:209 - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLLANG
+2025-02-10 21:41:13 TRACE XBeanDebug:237 - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+2025-02-10 21:41:13 TRACE XBeanDebug:209 - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+2025-02-10 21:41:13 TRACE XBeanDebug:237 - Reading unresolved handles for type system org.apache.poi.schemas.ooxml.system.ooxml
+2025-02-10 21:41:13 TRACE XBeanDebug:209 - Finished loading type system org.apache.poi.schemas.ooxml.system.ooxml
+2025-02-10 21:41:13 TRACE XBeanDebug:946 - Resolving type for handle themefd26doctype
+2025-02-10 21:41:13 TRACE XBeanDebug:946 - Resolving type for handle sstf81fdoctype
+2025-02-10 21:41:13 TRACE XBeanDebug:946 - Resolving type for handle ctsst44f3type
+2025-02-10 21:41:13 TRACE XBeanDebug:946 - Resolving type for handle ctrsta472type
+2025-02-10 21:41:13 TRACE XBeanDebug:946 - Resolving type for handle stylesheet5d8bdoctype
+2025-02-10 21:41:13 TRACE XBeanDebug:946 - Resolving type for handle ctstylesheet4257type
+2025-02-10 21:41:13 TRACE XBeanDebug:946 - Resolving type for handle ctnumfmtsb58btype
+2025-02-10 21:41:13 TRACE XBeanDebug:946 - Resolving type for handle ctnumfmt3870type
+2025-02-10 21:41:13 TRACE XBeanDebug:946 - Resolving type for handle stnumfmtid76fbtype
+2025-02-10 21:41:13 TRACE XBeanDebug:946 - Resolving type for handle stxstringf179type
+2025-02-10 21:41:13 TRACE XBeanDebug:946 - Resolving type for handle ctfonts6623type
+2025-02-10 21:41:13 TRACE XBeanDebug:946 - Resolving type for handle ctfont14d8type
+2025-02-10 21:41:13 TRACE XBeanDebug:946 - Resolving type for handle ctfills2c6ftype
+2025-02-10 21:41:13 TRACE XBeanDebug:946 - Resolving type for handle ctfill550ctype
+2025-02-10 21:41:14 TRACE XBeanDebug:946 - Resolving type for handle ctborders0d66type
+2025-02-10 21:41:14 TRACE XBeanDebug:946 - Resolving type for handle ctborderf935type
+2025-02-10 21:41:14 TRACE XBeanDebug:946 - Resolving type for handle ctcellxfs1322type
+2025-02-10 21:41:14 TRACE XBeanDebug:946 - Resolving type for handle ctxf97f7type
+2025-02-10 21:41:14 TRACE XBeanDebug:946 - Resolving type for handle ctcellstylexfsa81ftype
+2025-02-10 21:41:14 TRACE XBeanDebug:946 - Resolving type for handle cttablestyles872ftype
+2025-02-10 21:41:14 TRACE XBeanDebug:946 - Resolving type for handle workbookec17doctype
+2025-02-10 21:41:14 TRACE XBeanDebug:946 - Resolving type for handle ctworkbook83c3type
+2025-02-10 21:41:14 TRACE XBeanDebug:946 - Resolving type for handle ctsheets49fdtype
+2025-02-10 21:41:14 TRACE XBeanDebug:946 - Resolving type for handle ctsheet4dbetype
+2025-02-10 21:41:14 TRACE XBeanDebug:946 - Resolving type for handle strelationshipid1e94type
+2025-02-10 21:41:14 TRACE XBeanDebug:946 - Resolving type for handle worksheetf539doctype
+2025-02-10 21:41:14 TRACE XBeanDebug:946 - Resolving type for handle ctworksheet530dtype
+2025-02-10 21:41:14 TRACE XBeanDebug:946 - Resolving type for handle ctcols627ctype
+2025-02-10 21:41:14 TRACE XBeanDebug:946 - Resolving type for handle ctcola95ftype
+2025-02-10 21:41:14 TRACE XBeanDebug:946 - Resolving type for handle ctsheetdata8408type
+2025-02-10 21:41:14 TRACE XBeanDebug:946 - Resolving type for handle ctrowdd39type
+2025-02-10 21:41:14 TRACE XBeanDebug:946 - Resolving type for handle ctcell842btype
+2025-02-10 21:41:14 TRACE XBeanDebug:946 - Resolving type for handle stcellrefe4e0type
+2025-02-10 21:41:14 TRACE XBeanDebug:946 - Resolving type for handle cthyperlinks6416type
+2025-02-10 21:41:14 TRACE XBeanDebug:946 - Resolving type for handle cthyperlink0c85type
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:41:14 TRACE XBeanDebug:946 - Resolving type for handle stcelltypebf95type
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:41:14 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:42:33 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:42:33 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:42:33 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:42:33 TRACE XBeanDebug:199 - Loading type system org.apache.poi.schemas.ooxml.system.ooxml
+2025-02-10 21:42:33 TRACE XBeanDebug:199 - Loading type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+2025-02-10 21:42:33 TRACE XBeanDebug:199 - Loading type system org.apache.xmlbeans.metadata.system.sXMLLANG
+2025-02-10 21:42:33 TRACE XBeanDebug:199 - Loading type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+2025-02-10 21:42:33 TRACE XBeanDebug:199 - Loading type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+2025-02-10 21:42:33 TRACE XBeanDebug:237 - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+2025-02-10 21:42:33 TRACE XBeanDebug:209 - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+2025-02-10 21:42:33 TRACE XBeanDebug:237 - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+2025-02-10 21:42:33 TRACE XBeanDebug:209 - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+2025-02-10 21:42:33 TRACE XBeanDebug:237 - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLLANG
+2025-02-10 21:42:33 TRACE XBeanDebug:209 - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLLANG
+2025-02-10 21:42:33 TRACE XBeanDebug:237 - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+2025-02-10 21:42:33 TRACE XBeanDebug:209 - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+2025-02-10 21:42:33 TRACE XBeanDebug:237 - Reading unresolved handles for type system org.apache.poi.schemas.ooxml.system.ooxml
+2025-02-10 21:42:33 TRACE XBeanDebug:209 - Finished loading type system org.apache.poi.schemas.ooxml.system.ooxml
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle themefd26doctype
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle sstf81fdoctype
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle ctsst44f3type
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle ctrsta472type
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle stylesheet5d8bdoctype
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle ctstylesheet4257type
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle ctnumfmtsb58btype
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle ctnumfmt3870type
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle stnumfmtid76fbtype
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle stxstringf179type
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle ctfonts6623type
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle ctfont14d8type
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle ctfills2c6ftype
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle ctfill550ctype
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle ctborders0d66type
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle ctborderf935type
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle ctcellxfs1322type
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle ctxf97f7type
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle ctcellstylexfsa81ftype
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle cttablestyles872ftype
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle workbookec17doctype
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle ctworkbook83c3type
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle ctsheets49fdtype
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle ctsheet4dbetype
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle strelationshipid1e94type
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle worksheetf539doctype
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle ctworksheet530dtype
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle ctcols627ctype
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle ctcola95ftype
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle ctsheetdata8408type
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle ctrowdd39type
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle ctcell842btype
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle stcellrefe4e0type
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle cthyperlinks6416type
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle cthyperlink0c85type
+2025-02-10 21:42:33 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:42:33 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:42:33 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:42:33 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:42:33 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:42:33 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:42:33 TRACE XBeanDebug:946 - Resolving type for handle stcelltypebf95type
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:42:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:50:42 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:50:42 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:50:42 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:50:42 TRACE XBeanDebug:199 - Loading type system org.apache.poi.schemas.ooxml.system.ooxml
+2025-02-10 21:50:42 TRACE XBeanDebug:199 - Loading type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+2025-02-10 21:50:42 TRACE XBeanDebug:199 - Loading type system org.apache.xmlbeans.metadata.system.sXMLLANG
+2025-02-10 21:50:42 TRACE XBeanDebug:199 - Loading type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+2025-02-10 21:50:42 TRACE XBeanDebug:199 - Loading type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+2025-02-10 21:50:42 TRACE XBeanDebug:237 - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+2025-02-10 21:50:42 TRACE XBeanDebug:209 - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+2025-02-10 21:50:42 TRACE XBeanDebug:237 - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+2025-02-10 21:50:42 TRACE XBeanDebug:209 - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+2025-02-10 21:50:42 TRACE XBeanDebug:237 - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLLANG
+2025-02-10 21:50:42 TRACE XBeanDebug:209 - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLLANG
+2025-02-10 21:50:42 TRACE XBeanDebug:237 - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+2025-02-10 21:50:42 TRACE XBeanDebug:209 - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+2025-02-10 21:50:42 TRACE XBeanDebug:237 - Reading unresolved handles for type system org.apache.poi.schemas.ooxml.system.ooxml
+2025-02-10 21:50:42 TRACE XBeanDebug:209 - Finished loading type system org.apache.poi.schemas.ooxml.system.ooxml
+2025-02-10 21:50:42 TRACE XBeanDebug:946 - Resolving type for handle themefd26doctype
+2025-02-10 21:50:42 TRACE XBeanDebug:946 - Resolving type for handle sstf81fdoctype
+2025-02-10 21:50:42 TRACE XBeanDebug:946 - Resolving type for handle ctsst44f3type
+2025-02-10 21:50:42 TRACE XBeanDebug:946 - Resolving type for handle ctrsta472type
+2025-02-10 21:50:43 TRACE XBeanDebug:946 - Resolving type for handle stylesheet5d8bdoctype
+2025-02-10 21:50:43 TRACE XBeanDebug:946 - Resolving type for handle ctstylesheet4257type
+2025-02-10 21:50:43 TRACE XBeanDebug:946 - Resolving type for handle ctnumfmtsb58btype
+2025-02-10 21:50:43 TRACE XBeanDebug:946 - Resolving type for handle ctnumfmt3870type
+2025-02-10 21:50:43 TRACE XBeanDebug:946 - Resolving type for handle stnumfmtid76fbtype
+2025-02-10 21:50:43 TRACE XBeanDebug:946 - Resolving type for handle stxstringf179type
+2025-02-10 21:50:43 TRACE XBeanDebug:946 - Resolving type for handle ctfonts6623type
+2025-02-10 21:50:43 TRACE XBeanDebug:946 - Resolving type for handle ctfont14d8type
+2025-02-10 21:50:43 TRACE XBeanDebug:946 - Resolving type for handle ctfills2c6ftype
+2025-02-10 21:50:43 TRACE XBeanDebug:946 - Resolving type for handle ctfill550ctype
+2025-02-10 21:50:43 TRACE XBeanDebug:946 - Resolving type for handle ctborders0d66type
+2025-02-10 21:50:43 TRACE XBeanDebug:946 - Resolving type for handle ctborderf935type
+2025-02-10 21:50:43 TRACE XBeanDebug:946 - Resolving type for handle ctcellxfs1322type
+2025-02-10 21:50:43 TRACE XBeanDebug:946 - Resolving type for handle ctxf97f7type
+2025-02-10 21:50:43 TRACE XBeanDebug:946 - Resolving type for handle ctcellstylexfsa81ftype
+2025-02-10 21:50:43 TRACE XBeanDebug:946 - Resolving type for handle cttablestyles872ftype
+2025-02-10 21:50:43 TRACE XBeanDebug:946 - Resolving type for handle workbookec17doctype
+2025-02-10 21:50:43 TRACE XBeanDebug:946 - Resolving type for handle ctworkbook83c3type
+2025-02-10 21:50:43 TRACE XBeanDebug:946 - Resolving type for handle ctsheets49fdtype
+2025-02-10 21:50:43 TRACE XBeanDebug:946 - Resolving type for handle ctsheet4dbetype
+2025-02-10 21:50:43 TRACE XBeanDebug:946 - Resolving type for handle strelationshipid1e94type
+2025-02-10 21:50:43 TRACE XBeanDebug:946 - Resolving type for handle worksheetf539doctype
+2025-02-10 21:50:43 TRACE XBeanDebug:946 - Resolving type for handle ctworksheet530dtype
+2025-02-10 21:50:43 TRACE XBeanDebug:946 - Resolving type for handle ctcols627ctype
+2025-02-10 21:50:43 TRACE XBeanDebug:946 - Resolving type for handle ctcola95ftype
+2025-02-10 21:50:43 TRACE XBeanDebug:946 - Resolving type for handle ctsheetdata8408type
+2025-02-10 21:50:43 TRACE XBeanDebug:946 - Resolving type for handle ctrowdd39type
+2025-02-10 21:50:43 TRACE XBeanDebug:946 - Resolving type for handle ctcell842btype
+2025-02-10 21:50:43 TRACE XBeanDebug:946 - Resolving type for handle stcellrefe4e0type
+2025-02-10 21:50:43 TRACE XBeanDebug:946 - Resolving type for handle cthyperlinks6416type
+2025-02-10 21:50:43 TRACE XBeanDebug:946 - Resolving type for handle cthyperlink0c85type
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:50:43 TRACE XBeanDebug:946 - Resolving type for handle stcelltypebf95type
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:50:43 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:51:15 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:51:15 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:51:15 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:51:15 TRACE XBeanDebug:199 - Loading type system org.apache.poi.schemas.ooxml.system.ooxml
+2025-02-10 21:51:15 TRACE XBeanDebug:199 - Loading type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+2025-02-10 21:51:15 TRACE XBeanDebug:199 - Loading type system org.apache.xmlbeans.metadata.system.sXMLLANG
+2025-02-10 21:51:15 TRACE XBeanDebug:199 - Loading type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+2025-02-10 21:51:15 TRACE XBeanDebug:199 - Loading type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+2025-02-10 21:51:15 TRACE XBeanDebug:237 - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+2025-02-10 21:51:15 TRACE XBeanDebug:209 - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+2025-02-10 21:51:15 TRACE XBeanDebug:237 - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+2025-02-10 21:51:15 TRACE XBeanDebug:209 - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+2025-02-10 21:51:15 TRACE XBeanDebug:237 - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLLANG
+2025-02-10 21:51:15 TRACE XBeanDebug:209 - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLLANG
+2025-02-10 21:51:15 TRACE XBeanDebug:237 - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+2025-02-10 21:51:15 TRACE XBeanDebug:209 - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+2025-02-10 21:51:15 TRACE XBeanDebug:237 - Reading unresolved handles for type system org.apache.poi.schemas.ooxml.system.ooxml
+2025-02-10 21:51:15 TRACE XBeanDebug:209 - Finished loading type system org.apache.poi.schemas.ooxml.system.ooxml
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle themefd26doctype
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle sstf81fdoctype
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle ctsst44f3type
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle ctrsta472type
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle stylesheet5d8bdoctype
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle ctstylesheet4257type
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle ctnumfmtsb58btype
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle ctnumfmt3870type
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle stnumfmtid76fbtype
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle stxstringf179type
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle ctfonts6623type
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle ctfont14d8type
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle ctfills2c6ftype
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle ctfill550ctype
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle ctborders0d66type
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle ctborderf935type
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle ctcellxfs1322type
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle ctxf97f7type
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle ctcellstylexfsa81ftype
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle cttablestyles872ftype
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle workbookec17doctype
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle ctworkbook83c3type
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle ctsheets49fdtype
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle ctsheet4dbetype
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle strelationshipid1e94type
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle worksheetf539doctype
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle ctworksheet530dtype
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle ctcols627ctype
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle ctcola95ftype
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle ctsheetdata8408type
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle ctrowdd39type
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle ctcell842btype
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle stcellrefe4e0type
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle cthyperlinks6416type
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle cthyperlink0c85type
+2025-02-10 21:51:15 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:51:15 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:51:15 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:51:15 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:51:15 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:51:15 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:51:15 TRACE XBeanDebug:946 - Resolving type for handle stcelltypebf95type
+2025-02-10 21:51:15 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:51:15 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:51:15 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:51:15 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:51:15 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:51:15 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:51:15 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:51:15 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:51:15 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:51:15 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:51:15 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:51:15 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:51:15 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:51:15 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:51:15 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:51:15 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:51:15 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:51:15 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:51:15 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:51:15 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:51:15 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:51:16 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:52:07 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:52:07 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:52:07 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:52:07 TRACE XBeanDebug:199 - Loading type system org.apache.poi.schemas.ooxml.system.ooxml
+2025-02-10 21:52:07 TRACE XBeanDebug:199 - Loading type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+2025-02-10 21:52:07 TRACE XBeanDebug:199 - Loading type system org.apache.xmlbeans.metadata.system.sXMLLANG
+2025-02-10 21:52:07 TRACE XBeanDebug:199 - Loading type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+2025-02-10 21:52:07 TRACE XBeanDebug:199 - Loading type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+2025-02-10 21:52:07 TRACE XBeanDebug:237 - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+2025-02-10 21:52:07 TRACE XBeanDebug:209 - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+2025-02-10 21:52:07 TRACE XBeanDebug:237 - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+2025-02-10 21:52:07 TRACE XBeanDebug:209 - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+2025-02-10 21:52:07 TRACE XBeanDebug:237 - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLLANG
+2025-02-10 21:52:07 TRACE XBeanDebug:209 - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLLANG
+2025-02-10 21:52:07 TRACE XBeanDebug:237 - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+2025-02-10 21:52:07 TRACE XBeanDebug:209 - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+2025-02-10 21:52:07 TRACE XBeanDebug:237 - Reading unresolved handles for type system org.apache.poi.schemas.ooxml.system.ooxml
+2025-02-10 21:52:07 TRACE XBeanDebug:209 - Finished loading type system org.apache.poi.schemas.ooxml.system.ooxml
+2025-02-10 21:52:07 TRACE XBeanDebug:946 - Resolving type for handle themefd26doctype
+2025-02-10 21:52:07 TRACE XBeanDebug:946 - Resolving type for handle sstf81fdoctype
+2025-02-10 21:52:07 TRACE XBeanDebug:946 - Resolving type for handle ctsst44f3type
+2025-02-10 21:52:07 TRACE XBeanDebug:946 - Resolving type for handle ctrsta472type
+2025-02-10 21:52:07 TRACE XBeanDebug:946 - Resolving type for handle stylesheet5d8bdoctype
+2025-02-10 21:52:07 TRACE XBeanDebug:946 - Resolving type for handle ctstylesheet4257type
+2025-02-10 21:52:07 TRACE XBeanDebug:946 - Resolving type for handle ctnumfmtsb58btype
+2025-02-10 21:52:08 TRACE XBeanDebug:946 - Resolving type for handle ctnumfmt3870type
+2025-02-10 21:52:08 TRACE XBeanDebug:946 - Resolving type for handle stnumfmtid76fbtype
+2025-02-10 21:52:08 TRACE XBeanDebug:946 - Resolving type for handle stxstringf179type
+2025-02-10 21:52:08 TRACE XBeanDebug:946 - Resolving type for handle ctfonts6623type
+2025-02-10 21:52:08 TRACE XBeanDebug:946 - Resolving type for handle ctfont14d8type
+2025-02-10 21:52:08 TRACE XBeanDebug:946 - Resolving type for handle ctfills2c6ftype
+2025-02-10 21:52:08 TRACE XBeanDebug:946 - Resolving type for handle ctfill550ctype
+2025-02-10 21:52:08 TRACE XBeanDebug:946 - Resolving type for handle ctborders0d66type
+2025-02-10 21:52:08 TRACE XBeanDebug:946 - Resolving type for handle ctborderf935type
+2025-02-10 21:52:08 TRACE XBeanDebug:946 - Resolving type for handle ctcellxfs1322type
+2025-02-10 21:52:08 TRACE XBeanDebug:946 - Resolving type for handle ctxf97f7type
+2025-02-10 21:52:08 TRACE XBeanDebug:946 - Resolving type for handle ctcellstylexfsa81ftype
+2025-02-10 21:52:08 TRACE XBeanDebug:946 - Resolving type for handle cttablestyles872ftype
+2025-02-10 21:52:08 TRACE XBeanDebug:946 - Resolving type for handle workbookec17doctype
+2025-02-10 21:52:08 TRACE XBeanDebug:946 - Resolving type for handle ctworkbook83c3type
+2025-02-10 21:52:08 TRACE XBeanDebug:946 - Resolving type for handle ctsheets49fdtype
+2025-02-10 21:52:08 TRACE XBeanDebug:946 - Resolving type for handle ctsheet4dbetype
+2025-02-10 21:52:08 TRACE XBeanDebug:946 - Resolving type for handle strelationshipid1e94type
+2025-02-10 21:52:08 TRACE XBeanDebug:946 - Resolving type for handle worksheetf539doctype
+2025-02-10 21:52:08 TRACE XBeanDebug:946 - Resolving type for handle ctworksheet530dtype
+2025-02-10 21:52:08 TRACE XBeanDebug:946 - Resolving type for handle ctcols627ctype
+2025-02-10 21:52:08 TRACE XBeanDebug:946 - Resolving type for handle ctcola95ftype
+2025-02-10 21:52:08 TRACE XBeanDebug:946 - Resolving type for handle ctsheetdata8408type
+2025-02-10 21:52:08 TRACE XBeanDebug:946 - Resolving type for handle ctrowdd39type
+2025-02-10 21:52:08 TRACE XBeanDebug:946 - Resolving type for handle ctcell842btype
+2025-02-10 21:52:08 TRACE XBeanDebug:946 - Resolving type for handle stcellrefe4e0type
+2025-02-10 21:52:08 TRACE XBeanDebug:946 - Resolving type for handle cthyperlinks6416type
+2025-02-10 21:52:08 TRACE XBeanDebug:946 - Resolving type for handle cthyperlink0c85type
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:52:08 TRACE XBeanDebug:946 - Resolving type for handle stcelltypebf95type
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:52:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:53:18 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:53:18 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:53:18 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:53:19 TRACE XBeanDebug:199 - Loading type system org.apache.poi.schemas.ooxml.system.ooxml
+2025-02-10 21:53:19 TRACE XBeanDebug:199 - Loading type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+2025-02-10 21:53:19 TRACE XBeanDebug:199 - Loading type system org.apache.xmlbeans.metadata.system.sXMLLANG
+2025-02-10 21:53:19 TRACE XBeanDebug:199 - Loading type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+2025-02-10 21:53:19 TRACE XBeanDebug:199 - Loading type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+2025-02-10 21:53:19 TRACE XBeanDebug:237 - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+2025-02-10 21:53:19 TRACE XBeanDebug:209 - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+2025-02-10 21:53:19 TRACE XBeanDebug:237 - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+2025-02-10 21:53:19 TRACE XBeanDebug:209 - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+2025-02-10 21:53:19 TRACE XBeanDebug:237 - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLLANG
+2025-02-10 21:53:19 TRACE XBeanDebug:209 - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLLANG
+2025-02-10 21:53:19 TRACE XBeanDebug:237 - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+2025-02-10 21:53:19 TRACE XBeanDebug:209 - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+2025-02-10 21:53:19 TRACE XBeanDebug:237 - Reading unresolved handles for type system org.apache.poi.schemas.ooxml.system.ooxml
+2025-02-10 21:53:19 TRACE XBeanDebug:209 - Finished loading type system org.apache.poi.schemas.ooxml.system.ooxml
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle themefd26doctype
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle sstf81fdoctype
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle ctsst44f3type
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle ctrsta472type
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle stylesheet5d8bdoctype
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle ctstylesheet4257type
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle ctnumfmtsb58btype
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle ctnumfmt3870type
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle stnumfmtid76fbtype
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle stxstringf179type
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle ctfonts6623type
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle ctfont14d8type
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle ctfills2c6ftype
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle ctfill550ctype
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle ctborders0d66type
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle ctborderf935type
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle ctcellxfs1322type
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle ctxf97f7type
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle ctcellstylexfsa81ftype
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle cttablestyles872ftype
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle workbookec17doctype
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle ctworkbook83c3type
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle ctsheets49fdtype
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle ctsheet4dbetype
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle strelationshipid1e94type
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle worksheetf539doctype
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle ctworksheet530dtype
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle ctcols627ctype
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle ctcola95ftype
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle ctsheetdata8408type
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle ctrowdd39type
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle ctcell842btype
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle stcellrefe4e0type
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle cthyperlinks6416type
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle cthyperlink0c85type
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:53:19 TRACE XBeanDebug:946 - Resolving type for handle stcelltypebf95type
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:53:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:53:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:53:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:53:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:53:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:53:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:53:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:53:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:53:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:53:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:53:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:53:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:53:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:53:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:53:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:53:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:53:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:53:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:53:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:53:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:53:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:53:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:53:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:53:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:53:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 21:53:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 21:53:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 21:53:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 22:02:09 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 22:02:09 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 22:02:09 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 22:02:09 TRACE XBeanDebug:199 - Loading type system org.apache.poi.schemas.ooxml.system.ooxml
+2025-02-10 22:02:09 TRACE XBeanDebug:199 - Loading type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+2025-02-10 22:02:09 TRACE XBeanDebug:199 - Loading type system org.apache.xmlbeans.metadata.system.sXMLLANG
+2025-02-10 22:02:09 TRACE XBeanDebug:199 - Loading type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+2025-02-10 22:02:09 TRACE XBeanDebug:199 - Loading type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+2025-02-10 22:02:09 TRACE XBeanDebug:237 - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+2025-02-10 22:02:09 TRACE XBeanDebug:209 - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+2025-02-10 22:02:09 TRACE XBeanDebug:237 - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+2025-02-10 22:02:09 TRACE XBeanDebug:209 - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+2025-02-10 22:02:09 TRACE XBeanDebug:237 - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLLANG
+2025-02-10 22:02:09 TRACE XBeanDebug:209 - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLLANG
+2025-02-10 22:02:09 TRACE XBeanDebug:237 - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+2025-02-10 22:02:09 TRACE XBeanDebug:209 - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+2025-02-10 22:02:09 TRACE XBeanDebug:237 - Reading unresolved handles for type system org.apache.poi.schemas.ooxml.system.ooxml
+2025-02-10 22:02:09 TRACE XBeanDebug:209 - Finished loading type system org.apache.poi.schemas.ooxml.system.ooxml
+2025-02-10 22:02:09 TRACE XBeanDebug:946 - Resolving type for handle themefd26doctype
+2025-02-10 22:02:09 TRACE XBeanDebug:946 - Resolving type for handle sstf81fdoctype
+2025-02-10 22:02:09 TRACE XBeanDebug:946 - Resolving type for handle ctsst44f3type
+2025-02-10 22:02:09 TRACE XBeanDebug:946 - Resolving type for handle ctrsta472type
+2025-02-10 22:02:09 TRACE XBeanDebug:946 - Resolving type for handle stylesheet5d8bdoctype
+2025-02-10 22:02:09 TRACE XBeanDebug:946 - Resolving type for handle ctstylesheet4257type
+2025-02-10 22:02:09 TRACE XBeanDebug:946 - Resolving type for handle ctnumfmtsb58btype
+2025-02-10 22:02:09 TRACE XBeanDebug:946 - Resolving type for handle ctnumfmt3870type
+2025-02-10 22:02:09 TRACE XBeanDebug:946 - Resolving type for handle stnumfmtid76fbtype
+2025-02-10 22:02:09 TRACE XBeanDebug:946 - Resolving type for handle stxstringf179type
+2025-02-10 22:02:09 TRACE XBeanDebug:946 - Resolving type for handle ctfonts6623type
+2025-02-10 22:02:09 TRACE XBeanDebug:946 - Resolving type for handle ctfont14d8type
+2025-02-10 22:02:09 TRACE XBeanDebug:946 - Resolving type for handle ctfills2c6ftype
+2025-02-10 22:02:09 TRACE XBeanDebug:946 - Resolving type for handle ctfill550ctype
+2025-02-10 22:02:09 TRACE XBeanDebug:946 - Resolving type for handle ctborders0d66type
+2025-02-10 22:02:09 TRACE XBeanDebug:946 - Resolving type for handle ctborderf935type
+2025-02-10 22:02:09 TRACE XBeanDebug:946 - Resolving type for handle ctcellxfs1322type
+2025-02-10 22:02:09 TRACE XBeanDebug:946 - Resolving type for handle ctxf97f7type
+2025-02-10 22:02:09 TRACE XBeanDebug:946 - Resolving type for handle ctcellstylexfsa81ftype
+2025-02-10 22:02:09 TRACE XBeanDebug:946 - Resolving type for handle cttablestyles872ftype
+2025-02-10 22:02:09 TRACE XBeanDebug:946 - Resolving type for handle workbookec17doctype
+2025-02-10 22:02:09 TRACE XBeanDebug:946 - Resolving type for handle ctworkbook83c3type
+2025-02-10 22:02:09 TRACE XBeanDebug:946 - Resolving type for handle ctsheets49fdtype
+2025-02-10 22:02:09 TRACE XBeanDebug:946 - Resolving type for handle ctsheet4dbetype
+2025-02-10 22:02:09 TRACE XBeanDebug:946 - Resolving type for handle strelationshipid1e94type
+2025-02-10 22:02:09 TRACE XBeanDebug:946 - Resolving type for handle worksheetf539doctype
+2025-02-10 22:02:09 TRACE XBeanDebug:946 - Resolving type for handle ctworksheet530dtype
+2025-02-10 22:02:09 TRACE XBeanDebug:946 - Resolving type for handle ctcols627ctype
+2025-02-10 22:02:09 TRACE XBeanDebug:946 - Resolving type for handle ctcola95ftype
+2025-02-10 22:02:10 TRACE XBeanDebug:946 - Resolving type for handle ctsheetdata8408type
+2025-02-10 22:02:10 TRACE XBeanDebug:946 - Resolving type for handle ctrowdd39type
+2025-02-10 22:02:10 TRACE XBeanDebug:946 - Resolving type for handle ctcell842btype
+2025-02-10 22:02:10 TRACE XBeanDebug:946 - Resolving type for handle stcellrefe4e0type
+2025-02-10 22:02:10 TRACE XBeanDebug:946 - Resolving type for handle cthyperlinks6416type
+2025-02-10 22:02:10 TRACE XBeanDebug:946 - Resolving type for handle cthyperlink0c85type
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 22:02:10 TRACE XBeanDebug:946 - Resolving type for handle stcelltypebf95type
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-02-10 22:02:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
