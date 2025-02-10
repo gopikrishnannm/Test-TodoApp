@@ -13,7 +13,7 @@ public class DeleteAccountPage extends BasePage{
 	@FindBy(name="username")
 	WebElement txtUsername;
 	
-	@FindBy(xpath = "//button[text()='Register']")
+	@FindBy(xpath = "//button[text()='Delete']")
 	WebElement btnDelete;
 	
 	public void setUsername(String username){

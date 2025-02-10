@@ -1,9 +1,15 @@
 package pageObjects;
 
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CreateUpdateTodoPage extends BasePage{
 
@@ -11,7 +17,7 @@ public class CreateUpdateTodoPage extends BasePage{
 		super(driver);
 	}
 	
-	@FindBy(name="description")
+	@FindBy(xpath="//input[@name='description']")
 	WebElement txtDescription;
 	
 	@FindBy(name="targetdate")
@@ -28,8 +34,18 @@ public class CreateUpdateTodoPage extends BasePage{
 	
 
 	
-	public void setDesctiption(String description) {
+	public void setDescription(String description) {
+//		JavascriptExecutor js = (JavascriptExecutor) driver;
+//		js.executeScript("arguments[0].click();", txtDescription);
+//		txtDescription.click();
 		txtDescription.sendKeys(description);
+//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//	    WebElement descField = wait.until(ExpectedConditions.elementToBeClickable(By.name("description")));
+//	    // Click only if necessary; otherwise, directly sendKeys
+//	    descField.click(); 
+//	    descField.clear(); // Clear existing text if needed
+//	    descField.sendKeys(description);
+
 	}
 	
 	public void setTargetDate(String targetDate) {
@@ -45,7 +61,7 @@ public class CreateUpdateTodoPage extends BasePage{
 		btnSave.click();
 	}
 	
-	public String isSuccessMessageDisplayed() {
+	public String getSuccessMessage() {
 		try {
 			return successMsg.getText();
 		} catch (Exception e) {

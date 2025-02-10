@@ -19,7 +19,7 @@ public class LoginPage extends BasePage{
 	@FindBy(id="register-button")
 	WebElement btnRegister;
 	
-	@FindBy(xpath = "//button[text()='login']")
+	@FindBy(xpath = "//input[@id='login-button']")
 	WebElement btnLogin;
 	
 	public void setUsername(String username){

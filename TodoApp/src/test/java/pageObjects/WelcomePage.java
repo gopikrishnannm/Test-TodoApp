@@ -25,11 +25,11 @@ public class WelcomePage extends BasePage{
 	WebElement failureMsg;
 	
 	
-	public void clickTodoButton() {
+	public void clickManageTodoButton() {
 		btnTodo.click();
 	}
 	
-	public void clickDeleteButton() {
+	public void clickDeleteAccountButton() {
 		btnDeleteAcct.click();
 	}
 	

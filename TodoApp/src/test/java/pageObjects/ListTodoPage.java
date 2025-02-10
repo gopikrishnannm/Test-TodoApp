@@ -19,10 +19,6 @@ public class ListTodoPage extends BasePage{
 	@FindBy(xpath = "//button[text()='Update']")
 	WebElement btnUpdateTodo;
 	
-
-	
-
-	
 	public void clickCreateNewTodoButton() {
 		btnCreateNewTodo.click();
 	}
