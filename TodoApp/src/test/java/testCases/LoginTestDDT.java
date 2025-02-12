@@ -28,22 +28,16 @@ public class LoginTestDDT extends BaseClass{
 		
 		Header header = new Header(driver);
 		
-		if(isValid.equalsIgnoreCase("Valid")) {
-			if(isLandedToWelcomepage) {
-				Assert.assertTrue(true);
-				header.clickLogoutButton();
-			}
-			else {
-				Assert.assertFalse(false);
-			}
-		}
-		else {
-			if(isLandedToWelcomepage) {
-				Assert.assertTrue(false);
-			}
-			else {
-				Assert.assertFalse(true);
-			}
+		if (isValid.equalsIgnoreCase("Valid")) {
+		    Assert.assertTrue(isLandedToWelcomepage, "Login should have succeeded but did not.");
+		    if (isLandedToWelcomepage) {
+		        header.clickLogoutButton();
+		    }
+		} else {
+		    Assert.assertFalse(isLandedToWelcomepage, "Login should have failed, but user landed on welcome page.");
+		    if (isLandedToWelcomepage) {
+		        header.clickLogoutButton();
+		    }
 		}
 		
 		logger.info("TC FINISHED EXECUTING");

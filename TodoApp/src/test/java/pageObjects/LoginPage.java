@@ -23,10 +23,12 @@ public class LoginPage extends BasePage{
 	WebElement btnLogin;
 	
 	public void setUsername(String username){
+		txtUsername.clear();
 		txtUsername.sendKeys(username);	
 	}
 	
 	public void setPassword(String password) {
+		txtPassword.clear();
 		txtPassword.sendKeys(password);
 	}
 	

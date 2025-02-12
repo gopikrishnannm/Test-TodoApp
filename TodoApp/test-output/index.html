@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.LoginTestDDT" class="method navigator-link" hash-for-method="verify_loginDDT">verify_loginDDT</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.LoginTestDDT" class="method navigator-link" hash-for-method="verify_loginDDT(user1000, user10, Invalid)">verify_loginDDT(user1000, user10, Invalid)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.LoginTestDDT" class="method navigator-link" hash-for-method="verify_loginDDT(userx, userx, Valid)">verify_loginDDT(userx, userx, Valid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.LoginTestDDT" class="method navigator-link" hash-for-method="verify_loginDDT(user1, user1, Valid)">verify_loginDDT(user1, user1, Valid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.LoginTestDDT" class="method navigator-link" hash-for-method="verify_loginDDT(user1, userx, Invalid)">verify_loginDDT(user1, userx, Invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,29 +133,46 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">testCases.LoginTestDDT</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verify_loginDDT">
-                  </a> <!-- verify_loginDDT -->
+                  <a name="verify_loginDDT(user1000, user10, Invalid)">
+                  </a> <!-- verify_loginDDT(user1000, user10, Invalid) -->
                   <span class="method-name">verify_loginDDT</span>
-                  <div class="stack-trace">org.testng.internal.reflect.MethodMatcherException: 
-[public void testCases.LoginTestDDT.verify_loginDDT(java.lang.String,java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: verify_loginDDT([java.lang.String arg0, java.lang.String arg1, java.lang.String arg2])
-Arguments: [(java.lang.String) userx,(java.lang.String) userx,(java.lang.String) Valid,(java.lang.String) ]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 22 stack frames
-</div> <!-- stack-trace -->
+                  <span class="parameters">(user1000,user10,Invalid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_loginDDT(userx, userx, Valid)">
+                  </a> <!-- verify_loginDDT(userx, userx, Valid) -->
+                  <span class="method-name">verify_loginDDT</span>
+                  <span class="parameters">(userx,userx,Valid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_loginDDT(user1, user1, Valid)">
+                  </a> <!-- verify_loginDDT(user1, user1, Valid) -->
+                  <span class="method-name">verify_loginDDT</span>
+                  <span class="parameters">(user1,user1,Valid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_loginDDT(user1, userx, Invalid)">
+                  </a> <!-- verify_loginDDT(user1, userx, Invalid) -->
+                  <span class="method-name">verify_loginDDT</span>
+                  <span class="parameters">(user1,userx,Invalid)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -195,16 +227,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verify_loginDDT')
 data.setCell(0, 2, 'testCases.LoginTestDDT')
-data.setCell(0, 3, 1673);
+data.setCell(0, 3, 10471);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verify_loginDDT')
+data.setCell(1, 2, 'testCases.LoginTestDDT')
+data.setCell(1, 3, 10406);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verify_loginDDT')
+data.setCell(2, 2, 'testCases.LoginTestDDT')
+data.setCell(2, 3, 1133);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verify_loginDDT')
+data.setCell(3, 2, 'testCases.LoginTestDDT')
+data.setCell(3, 3, 880);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 22 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -235,9 +279,25 @@ return data;
                 <span class="method-name">setup(Windows, Chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verify_loginDDT(userx, userx, Valid)</span>
+                <span class="method-start">4277 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_loginDDT(user1, userx, Invalid)</span>
+                <span class="method-start">5413 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_loginDDT(user1000, user10, Invalid)</span>
+                <span class="method-start">15819 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_loginDDT(user1, user1, Valid)</span>
+                <span class="method-start">26292 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">4885 ms</span>
+                <span class="method-start">27176 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
