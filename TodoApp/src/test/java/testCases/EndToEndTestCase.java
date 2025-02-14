@@ -15,7 +15,7 @@ import pageObjects.WelcomePage;
 
 public class EndToEndTestCase extends BaseClass{
 	
-	@Test()
+	@Test(groups= {"regression"})
 	public void verifyE2EFuncionality() {
 		
 		logger.info("Starting Of E2E TC");
@@ -71,7 +71,7 @@ public class EndToEndTestCase extends BaseClass{
 		
 
 		
-		String expectedMessage = "New Todo created successfully!";
+		String expectedMessage = "New Todo created successfully!3";
 		String actualMessage = createUpdateTodoPage.getSuccessMessage();
 		
 //		if (!actualMessage.equals(expectedMessage)) {
@@ -121,7 +121,10 @@ public class EndToEndTestCase extends BaseClass{
 		deleteAccountPage.clickDeleteButton();
 		
 		String expectedURL = property.getProperty("appUrl");
+		
+		waitForURLToBe(expectedURL, 10);
 		String actualURL = driver.getCurrentUrl();
+		
 		
 		softAssert.assertEquals(actualURL, expectedURL, "Account Not Deleted");
 		

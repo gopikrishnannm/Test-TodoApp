@@ -11,7 +11,7 @@ import utilities.DataProviders;
 public class LoginTestDDT extends BaseClass{
 	
 	
-	@Test(dataProvider="LoginData", dataProviderClass=DataProviders.class)
+	@Test(dataProvider="LoginData", dataProviderClass=DataProviders.class, groups= {"smoke"})
 	public void verify_loginDDT(String username, String password, String isValid) {
 		
 		logger.info("TC STARTED EXECUTING");

@@ -15,15 +15,17 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
 public class BaseClass {
 	
-	WebDriver driver;
-	Properties property;
-	Logger logger; //log4j
+	public static WebDriver driver;
+	public Properties property;
+	public Logger logger; //log4j
 	
 	@BeforeClass
 	@Parameters({"os","browser"})
@@ -52,19 +54,26 @@ public class BaseClass {
 	public void tearDown() {
 		driver.quit();
 	}
-	
-	public void captureScreen(String name) {
+
+	public String captureScreen(String testMethodname) throws IOException {
+
+		String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+				
+		TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
+		File sourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
 		
-		TakesScreenshot ts = (TakesScreenshot) driver;
-		File sourceFile = ts.getScreenshotAs(OutputType.FILE);
-		
-		String timestamp = new SimpleDateFormat("yyyyMMddhhss").format(new Date());
-		String targetFilePath = System.getProperty("user.dir")+"\\Screenshots\\"+name+"_"+timestamp+".png";
-		
-		File targetFile = new File(targetFilePath);
+		String targetFilePath=System.getProperty("user.dir")+"\\screenshots\\" + testMethodname + "_" + timeStamp + ".png";
+		File targetFile=new File(targetFilePath);
 		
 		sourceFile.renameTo(targetFile);
-		
+			
+		return targetFilePath;
+
+	}
+	
+	public void waitForURLToBe(String expectedURL, int timeoutSeconds) {
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutSeconds));
+	    wait.until(ExpectedConditions.urlToBe(expectedURL));
 	}
 
 }

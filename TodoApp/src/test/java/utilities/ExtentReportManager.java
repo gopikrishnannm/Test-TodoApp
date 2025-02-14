@@ -1,5 +1,8 @@
 package utilities;
 
+import java.awt.Desktop;
+import java.io.File;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -13,6 +16,8 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+
+import testCases.BaseClass;
 
 public class ExtentReportManager implements ITestListener{
 	
@@ -63,6 +68,32 @@ public class ExtentReportManager implements ITestListener{
 		
 		test.log(Status.FAIL, result.getName()+"Got Failed");
 		test.log(Status.INFO, result.getThrowable().getMessage());
+		
+		try {
+			String imagePath = new BaseClass().captureScreen(result.getName());
+			test.addScreenCaptureFromPath(imagePath);
+		}catch(IOException e1) {
+			e1.printStackTrace();
+		}
+	}
+	
+	public void onTestSkipped(ITestResult result) {
+		test = extent.createTest(result.getClass().getName());
+		test.assignCategory(result.getMethod().getGroups());
+		test.log(Status.SKIP, result.getName()+"Got Skipped");
+		test.log(Status.INFO, result.getThrowable().getMessage());
+	}
+	 
+	public void onFinish(ITestContext testContext) {
+		extent.flush();
+		String pathOfExtentReport = System.getProperty("user.dir")+"\\reports\\"+reportName;
+		File extentReport = new File(pathOfExtentReport);
+		
+		try {
+			Desktop.getDesktop().browse(extentReport.toURI());
+		}catch(IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 }
