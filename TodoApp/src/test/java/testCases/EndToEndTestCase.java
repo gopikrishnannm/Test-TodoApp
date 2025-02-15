@@ -38,13 +38,21 @@ public class EndToEndTestCase extends BaseClass{
 		registerPage.setPassword(password);
 		registerPage.clickRegister();
 		
-//		if (registerPage.isFailureMessageDisplayed()) {
-//        logger.error("User registration failed: User Already Exists");
-//        logger.debug("Debug logs: Failure message detected on Register Page");
-//			Assert.fail("User Already Exists");
-//
-//		}
-//		softAssert.assertTrue(registerPage.isSuccessMessageDisplayed());
+		
+		
+		if(registerPage.isSuccessMessageDisplayed()) {
+			softAssert.assertTrue(true, "No successMessage");
+		}
+		else if (registerPage.isFailureMessageDisplayed()) {
+        logger.error("User registration failed: User Already Exists");
+        logger.debug("Debug logs: Failure message detected on Register Page");
+			Assert.fail("User Already Exists");
+
+		}else {
+			 logger.error("Neither success nor failure message displayed.");
+		    Assert.fail("No success or failure message displayed, check the UI.");
+		}
+		
 		
 		
 	    logger.info("Navigating back and logging in with new user");
@@ -71,7 +79,7 @@ public class EndToEndTestCase extends BaseClass{
 		
 
 		
-		String expectedMessage = "New Todo created successfully!3";
+		String expectedMessage = "New Todo created successfully!";
 		String actualMessage = createUpdateTodoPage.getSuccessMessage();
 		
 //		if (!actualMessage.equals(expectedMessage)) {
@@ -122,11 +130,10 @@ public class EndToEndTestCase extends BaseClass{
 		
 		String expectedURL = property.getProperty("appUrl");
 		
-		waitForURLToBe(expectedURL, 10);
 		String actualURL = driver.getCurrentUrl();
 		
 		
-		softAssert.assertEquals(actualURL, expectedURL, "Account Not Deleted");
+		softAssert.assertTrue(deleteAccountPage.isDeleted(expectedURL), "Account Not Deleted");
 		
 	    logger.info("End-to-End Test Case Execution Completed");
 		softAssert.assertAll();

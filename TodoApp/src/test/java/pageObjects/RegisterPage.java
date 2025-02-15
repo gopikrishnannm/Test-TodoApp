@@ -44,32 +44,27 @@ public class RegisterPage extends BasePage{
 	}
 	
 	public boolean isSuccessMessageDisplayed() {
+		
 		try {
+			waitForElement(successMsg, 10);
 			return successMsg.isDisplayed();
 		}
-		catch(NoSuchElementException e) {
+		catch(TimeoutException | NoSuchElementException e ) {
 			return false;
 		}
 	}
 	
 	public boolean isFailureMessageDisplayed() {
+		
 		try {
+			waitForElement(failureMsg, 10);
 			return failureMsg.isDisplayed();
 		}
-		catch(NoSuchElementException e) {
+		catch(TimeoutException | NoSuchElementException e) {
 			return false;
 		}
 	}
-//	
-//	public boolean isSuccessMessageDisplayed() {
-//	    try {
-//	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-//	        wait.until(driver -> successMsg.isDisplayed());
-//	        return failureMsg.isDisplayed();
-//	    } catch (TimeoutException e) {
-//	        return false; // Element not found within the timeout, meaning no failure message
-//	    }
-//	}
+
 	
 
 }

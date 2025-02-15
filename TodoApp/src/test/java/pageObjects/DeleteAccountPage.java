@@ -1,5 +1,6 @@
 package pageObjects;
 
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -22,13 +23,17 @@ public class DeleteAccountPage extends BasePage{
 	
 	public void clickDeleteButton() {
 		btnDelete.click();
-	}
-	
+	}	
 	public boolean isDeleted(String url) {
-		if(url.equals(driver.getCurrentUrl())) {
-			return true;
+		
+		try {
+			waitForURLToBe(url, 10);
+			return driver.getCurrentUrl().equals(url);
 		}
-		return false;
+		catch(TimeoutException e) {
+			return false;
+		}
+
 	}
 
 }

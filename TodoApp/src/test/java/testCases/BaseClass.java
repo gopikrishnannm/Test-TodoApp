@@ -13,6 +13,7 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -27,7 +28,7 @@ public class BaseClass {
 	public Properties property;
 	public Logger logger; //log4j
 	
-	@BeforeClass
+	@BeforeClass(groups= {"regression"})
 	@Parameters({"os","browser"})
 	public void setup(String os, String browser) throws IOException {
 		
@@ -50,7 +51,7 @@ public class BaseClass {
 
 	}
 	
-	@AfterClass
+	@AfterClass(groups= {"regression"})
 	public void tearDown() {
 		driver.quit();
 	}
@@ -70,10 +71,6 @@ public class BaseClass {
 		return targetFilePath;
 
 	}
-	
-	public void waitForURLToBe(String expectedURL, int timeoutSeconds) {
-	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutSeconds));
-	    wait.until(ExpectedConditions.urlToBe(expectedURL));
-	}
+
 
 }

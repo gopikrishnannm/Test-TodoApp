@@ -22,7 +22,7 @@ public class LoginTestDDT extends BaseClass{
 		loginPage.setPassword(password);
 		logger.debug("Username is "+ username + "password is "+ password);
 		loginPage.clickLogin();
-		
+				
 		WelcomePage welcomePage = new WelcomePage(driver);
 		boolean isLandedToWelcomepage = welcomePage.isWelcomePageTitleExists();
 		
