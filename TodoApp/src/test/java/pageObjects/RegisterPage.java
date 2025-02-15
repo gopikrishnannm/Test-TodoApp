@@ -46,7 +46,7 @@ public class RegisterPage extends BasePage{
 	public boolean isSuccessMessageDisplayed() {
 		
 		try {
-			waitForElement(successMsg, 10);
+			waitForElement(successMsg, 1);
 			return successMsg.isDisplayed();
 		}
 		catch(TimeoutException | NoSuchElementException e ) {
@@ -57,7 +57,7 @@ public class RegisterPage extends BasePage{
 	public boolean isFailureMessageDisplayed() {
 		
 		try {
-			waitForElement(failureMsg, 10);
+			waitForElement(failureMsg, 1);
 			return failureMsg.isDisplayed();
 		}
 		catch(TimeoutException | NoSuchElementException e) {

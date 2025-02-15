@@ -40,15 +40,17 @@ public class EndToEndTestCase extends BaseClass{
 		
 		
 		
-		if(registerPage.isSuccessMessageDisplayed()) {
-			softAssert.assertTrue(true, "No successMessage");
-		}
-		else if (registerPage.isFailureMessageDisplayed()) {
+
+		if (registerPage.isFailureMessageDisplayed()) {
         logger.error("User registration failed: User Already Exists");
         logger.debug("Debug logs: Failure message detected on Register Page");
 			Assert.fail("User Already Exists");
 
-		}else {
+		}
+		else if(registerPage.isSuccessMessageDisplayed()) {
+			softAssert.assertTrue(true, "No successMessage");
+		}
+		else {
 			 logger.error("Neither success nor failure message displayed.");
 		    Assert.fail("No success or failure message displayed, check the UI.");
 		}

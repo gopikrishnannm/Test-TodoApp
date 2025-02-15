@@ -765,3 +765,62 @@
 2025-02-15 19:05:49 INFO  EndToEndTestCase:93 - Navigating to update Todo
 2025-02-15 19:05:50 INFO  EndToEndTestCase:117 - Logging out and deleting account
 2025-02-15 19:05:52 INFO  EndToEndTestCase:138 - End-to-End Test Case Execution Completed
+2025-02-15 23:05:12 INFO  EndToEndTestCase:21 - Starting Of E2E TC
+2025-02-15 23:05:12 INFO  EndToEndTestCase:25 - Navigate to Register Page
+2025-02-15 23:05:13 DEBUG EndToEndTestCase:32 - Entering registration details
+2025-02-15 23:05:14 INFO  EndToEndTestCase:58 - Navigating back and logging in with new user
+2025-02-15 23:05:14 INFO  EndToEndTestCase:66 - Navigating to Todo Management
+2025-02-15 23:05:16 DEBUG EndToEndTestCase:73 - Filling new Todo details
+2025-02-15 23:05:16 INFO  EndToEndTestCase:93 - Navigating to update Todo
+2025-02-15 23:05:17 INFO  EndToEndTestCase:117 - Logging out and deleting account
+2025-02-15 23:05:19 INFO  EndToEndTestCase:138 - End-to-End Test Case Execution Completed
+2025-02-15 23:06:03 INFO  EndToEndTestCase:21 - Starting Of E2E TC
+2025-02-15 23:06:03 INFO  EndToEndTestCase:25 - Navigate to Register Page
+2025-02-15 23:06:03 DEBUG EndToEndTestCase:32 - Entering registration details
+2025-02-15 23:06:04 INFO  EndToEndTestCase:58 - Navigating back and logging in with new user
+2025-02-15 23:06:04 INFO  EndToEndTestCase:66 - Navigating to Todo Management
+2025-02-15 23:06:15 INFO  EndToEndTestCase:21 - Starting Of E2E TC
+2025-02-15 23:06:15 INFO  EndToEndTestCase:25 - Navigate to Register Page
+2025-02-15 23:07:40 INFO  EndToEndTestCase:21 - Starting Of E2E TC
+2025-02-15 23:07:40 INFO  EndToEndTestCase:21 - Starting Of E2E TC
+2025-02-15 23:07:40 INFO  EndToEndTestCase:25 - Navigate to Register Page
+2025-02-15 23:07:40 INFO  EndToEndTestCase:25 - Navigate to Register Page
+2025-02-15 23:07:40 DEBUG EndToEndTestCase:32 - Entering registration details
+2025-02-15 23:08:50 INFO  EndToEndTestCase:21 - Starting Of E2E TC
+2025-02-15 23:08:50 INFO  EndToEndTestCase:25 - Navigate to Register Page
+2025-02-15 23:08:50 DEBUG EndToEndTestCase:32 - Entering registration details
+2025-02-15 23:09:31 ERROR EndToEndTestCase:52 - Neither success nor failure message displayed.
+2025-02-15 23:10:10 INFO  EndToEndTestCase:21 - Starting Of E2E TC
+2025-02-15 23:10:10 INFO  EndToEndTestCase:25 - Navigate to Register Page
+2025-02-15 23:10:10 DEBUG EndToEndTestCase:32 - Entering registration details
+2025-02-15 23:10:50 ERROR EndToEndTestCase:52 - Neither success nor failure message displayed.
+2025-02-15 23:12:28 INFO  EndToEndTestCase:21 - Starting Of E2E TC
+2025-02-15 23:12:28 INFO  EndToEndTestCase:25 - Navigate to Register Page
+2025-02-15 23:12:28 DEBUG EndToEndTestCase:32 - Entering registration details
+2025-02-15 23:13:02 INFO  EndToEndTestCase:21 - Starting Of E2E TC
+2025-02-15 23:13:02 INFO  EndToEndTestCase:25 - Navigate to Register Page
+2025-02-15 23:13:02 DEBUG EndToEndTestCase:32 - Entering registration details
+2025-02-15 23:13:09 ERROR EndToEndTestCase:52 - Neither success nor failure message displayed.
+2025-02-15 23:13:42 ERROR EndToEndTestCase:52 - Neither success nor failure message displayed.
+2025-02-15 23:14:42 INFO  EndToEndTestCase:21 - Starting Of E2E TC
+2025-02-15 23:14:42 INFO  EndToEndTestCase:25 - Navigate to Register Page
+2025-02-15 23:14:42 DEBUG EndToEndTestCase:32 - Entering registration details
+2025-02-15 23:15:23 ERROR EndToEndTestCase:52 - Neither success nor failure message displayed.
+2025-02-15 23:19:04 INFO  EndToEndTestCase:21 - Starting Of E2E TC
+2025-02-15 23:19:04 INFO  EndToEndTestCase:25 - Navigate to Register Page
+2025-02-15 23:19:04 DEBUG EndToEndTestCase:32 - Entering registration details
+2025-02-15 23:19:44 ERROR EndToEndTestCase:52 - Neither success nor failure message displayed.
+2025-02-15 23:21:30 INFO  EndToEndTestCase:21 - Starting Of E2E TC
+2025-02-15 23:21:30 INFO  EndToEndTestCase:25 - Navigate to Register Page
+2025-02-15 23:21:30 DEBUG EndToEndTestCase:32 - Entering registration details
+2025-02-15 23:21:30 ERROR EndToEndTestCase:45 - User registration failed: User Already Exists
+2025-02-15 23:21:30 DEBUG EndToEndTestCase:46 - Debug logs: Failure message detected on Register Page
+2025-02-15 23:21:53 INFO  EndToEndTestCase:21 - Starting Of E2E TC
+2025-02-15 23:21:53 INFO  EndToEndTestCase:25 - Navigate to Register Page
+2025-02-15 23:21:53 DEBUG EndToEndTestCase:32 - Entering registration details
+2025-02-15 23:22:33 ERROR EndToEndTestCase:54 - Neither success nor failure message displayed.
+2025-02-15 23:23:45 INFO  EndToEndTestCase:21 - Starting Of E2E TC
+2025-02-15 23:23:45 INFO  EndToEndTestCase:25 - Navigate to Register Page
+2025-02-15 23:23:46 DEBUG EndToEndTestCase:32 - Entering registration details
+2025-02-15 23:23:46 ERROR EndToEndTestCase:45 - User registration failed: User Already Exists
+2025-02-15 23:23:46 DEBUG EndToEndTestCase:46 - Debug logs: Failure message detected on Register Page
