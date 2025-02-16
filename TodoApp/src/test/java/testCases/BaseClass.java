@@ -29,6 +29,7 @@ import org.testng.annotations.Parameters;
 public class BaseClass {
 	
 	public static WebDriver driver;
+	public static String appUrl;
 	public Properties property;
 	public Logger logger; //log4j
 	
@@ -41,16 +42,17 @@ public class BaseClass {
 		property = new Properties();
 		FileReader fi = new FileReader("./src/test/resources/config.properties");
 		property.load(fi);
-		String appUrl = property.getProperty("appUrl");
+
 		
 		if(property.getProperty("execution_env").equalsIgnoreCase("remote")) {
-			
+			appUrl = property.getProperty("remote_appUrl");
 			String hubURL = "http://localhost:4444/wd/hub";
 			DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
 			
 			switch(os.toLowerCase()) {
 				case "windows" : desiredCapabilities.setPlatform(Platform.WIN11);break;
 				case "mac" : desiredCapabilities.setPlatform(Platform.MAC);break;
+				case "linux" : desiredCapabilities.setPlatform(Platform.LINUX);break;
 				default:System.out.println("No Matching Operation System");return;
 			}
 			
@@ -64,6 +66,7 @@ public class BaseClass {
 			 	
 		}
 		if(property.getProperty("execution_env").equalsIgnoreCase("local")) {
+			appUrl = property.getProperty("appUrl");
 			switch(browser.toLowerCase()) {
 			case "chrome": driver = new ChromeDriver();break;
 			case "edge" : driver = new EdgeDriver();break;

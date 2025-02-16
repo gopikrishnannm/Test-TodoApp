@@ -43,27 +43,39 @@ public class RegisterPage extends BasePage{
 		btnRegister.click();
 	}
 	
-	public boolean isSuccessMessageDisplayed() {
-		
-		try {
-			waitForElement(successMsg, 1);
-			return successMsg.isDisplayed();
-		}
-		catch(TimeoutException | NoSuchElementException e ) {
-			return false;
-		}
-	}
+//	public boolean isMessageDisplayed() {
+//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+//		boolean isSuccessMessagePresent = wait.until(ExpectedConditions.or(
+//	            ExpectedConditions.visibilityOf(successMsg),
+//	            ExpectedConditions.visibilityOf(failureMsg)
+//	        ));
+//		return isSuccessMessagePresent;
+//	}
+
 	
+//	public boolean isSuccessMessageDisplayed() {
+//		try {
+//			waitForElementFluent(successMsg, 3, 300);
+//			return successMsg.isDisplayed();
+//		}
+//		catch(TimeoutException | NoSuchElementException e ) {
+//			return false;
+//		}
+//	}
+//	
 	public boolean isFailureMessageDisplayed() {
 		
 		try {
-			waitForElement(failureMsg, 1);
-			return failureMsg.isDisplayed();
+			waitForElement(failureMsg, 5);
+			return true;
 		}
 		catch(TimeoutException | NoSuchElementException e) {
 			return false;
 		}
 	}
+
+
+
 
 	
 

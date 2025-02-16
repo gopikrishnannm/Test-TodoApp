@@ -5,16 +5,16 @@
     <listener class-name="utilities.ExtentReportManager"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
-    <parameter name="os" value="Windows"/>
-    <parameter name="browser" value="edge"/>
+    <parameter name="os" value="linux"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.EndToEndTestCase">
+      <class name="testCases.LoginTestDDT">
         <methods>
-          <include name="verifyE2EFuncionality"/>
           <include name="setup"/>
           <include name="tearDown"/>
+          <include name="verify_loginDDT" invocation-numbers="0 3"/>
         </methods>
-      </class> <!-- testCases.EndToEndTestCase -->
+      </class> <!-- testCases.LoginTestDDT -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

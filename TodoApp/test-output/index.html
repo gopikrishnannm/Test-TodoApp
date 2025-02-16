@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\gopik\OneDrive\Documents\Test-TodoApp\TodoApp\Master.xml</span>
+                    <span>C:\Users\gopik\OneDrive\Documents\Test-TodoApp\TodoApp\docker.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,10 +103,34 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.EndToEndTestCase" class="method navigator-link" hash-for-method="verifyE2EFuncionality">verifyE2EFuncionality</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testCases.LoginTestDDT" class="method navigator-link" hash-for-method="verify_loginDDT(userx, userx, Valid)">verify_loginDDT(userx, userx, Valid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.LoginTestDDT" class="method navigator-link" hash-for-method="verify_loginDDT(user1, user1, Valid)">verify_loginDDT(user1, user1, Valid)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.LoginTestDDT" class="method navigator-link" hash-for-method="verify_loginDDT(user1, userx, Invalid)">verify_loginDDT(user1, userx, Invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.LoginTestDDT" class="method navigator-link" hash-for-method="verify_loginDDT(user1000, user10, Invalid)">verify_loginDDT(user1000, user10, Invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -121,27 +145,65 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">testCases.EndToEndTestCase</span>
+              <span class="class-name">testCases.LoginTestDDT</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyE2EFuncionality">
-                  </a> <!-- verifyE2EFuncionality -->
-                  <span class="method-name">verifyE2EFuncionality</span>
-                  <div class="stack-trace">java.lang.AssertionError: User Already Exists
-	at testCases.EndToEndTestCase.verifyE2EFuncionality(EndToEndTestCase.java:47)
+                  <a name="verify_loginDDT(userx, userx, Valid)">
+                  </a> <!-- verify_loginDDT(userx, userx, Valid) -->
+                  <span class="method-name">verify_loginDDT</span>
+                  <span class="parameters">(userx,userx,Valid)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Login should have succeeded but did not. expected [true] but found [false]
+	at testCases.LoginTestDDT.verify_loginDDT(LoginTestDDT.java:32)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 26 stack frames
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_loginDDT(user1, user1, Valid)">
+                  </a> <!-- verify_loginDDT(user1, user1, Valid) -->
+                  <span class="method-name">verify_loginDDT</span>
+                  <span class="parameters">(user1,user1,Valid)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Login should have succeeded but did not. expected [true] but found [false]
+	at testCases.LoginTestDDT.verify_loginDDT(LoginTestDDT.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.LoginTestDDT</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_loginDDT(user1, userx, Invalid)">
+                  </a> <!-- verify_loginDDT(user1, userx, Invalid) -->
+                  <span class="method-name">verify_loginDDT</span>
+                  <span class="parameters">(user1,userx,Invalid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_loginDDT(user1000, user10, Invalid)">
+                  </a> <!-- verify_loginDDT(user1000, user10, Invalid) -->
+                  <span class="method-name">verify_loginDDT</span>
+                  <span class="parameters">(user1000,user10,Invalid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\gopik\OneDrive\Documents\Test-TodoApp\TodoApp\Master.xml</span>
+            <span class="header-content">C:\Users\gopik\OneDrive\Documents\Test-TodoApp\TodoApp\docker.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -152,10 +214,10 @@
     &lt;listener class-name=&quot;utilities.ExtentReportManager&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
-    &lt;parameter name=&quot;os&quot; value=&quot;Windows&quot;/&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
+    &lt;parameter name=&quot;os&quot; value=&quot;linux&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testCases.EndToEndTestCase&quot;/&gt;
+      &lt;class name=&quot;testCases.LoginTestDDT&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -180,10 +242,10 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">regression</span>
+              <span class="test-group-name">smoke</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">verifyE2EFuncionality</span>
+                <span class="method-in-group-name">verify_loginDDT</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -203,16 +265,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyE2EFuncionality')
-data.setCell(0, 2, 'testCases.EndToEndTestCase')
-data.setCell(0, 3, 581);
+data.setCell(0, 1, 'verify_loginDDT')
+data.setCell(0, 2, 'testCases.LoginTestDDT')
+data.setCell(0, 3, 10725);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verify_loginDDT')
+data.setCell(1, 2, 'testCases.LoginTestDDT')
+data.setCell(1, 3, 10623);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verify_loginDDT')
+data.setCell(2, 2, 'testCases.LoginTestDDT')
+data.setCell(2, 3, 10602);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verify_loginDDT')
+data.setCell(3, 2, 'testCases.LoginTestDDT')
+data.setCell(3, 3, 10567);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 581 ms</span>
+              <span class="suite-total-time">Total running time: 42 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -238,20 +312,34 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.EndToEndTestCase</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.LoginTestDDT</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup(Windows, edge)</span>
+                <span class="method-name">setup(linux, chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">verifyE2EFuncionality</span>
-                <span class="method-start">2870 ms</span>
+                <span class="method-name">verify_loginDDT(userx, userx, Valid)</span>
+                <span class="method-start">3446 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_loginDDT(user1, userx, Invalid)</span>
+                <span class="method-start">14359 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_loginDDT(user1000, user10, Invalid)</span>
+                <span class="method-start">24932 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verify_loginDDT(user1, user1, Valid)</span>
+                <span class="method-start">35536 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">3669 ms</span>
+                <span class="method-start">46343 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

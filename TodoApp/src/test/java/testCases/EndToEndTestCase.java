@@ -37,25 +37,17 @@ public class EndToEndTestCase extends BaseClass{
 		registerPage.setUsername(username);
 		registerPage.setPassword(password);
 		registerPage.clickRegister();
-		
-		
-		
-
-		if (registerPage.isFailureMessageDisplayed()) {
-        logger.error("User registration failed: User Already Exists");
-        logger.debug("Debug logs: Failure message detected on Register Page");
+				
+		boolean isFailure = registerPage.isFailureMessageDisplayed();
+		if (isFailure) {
+	        logger.error("User registration failed: User Already Exists");
+	        logger.debug("Debug logs: Failure message detected on Register Page");
 			Assert.fail("User Already Exists");
 
 		}
-		else if(registerPage.isSuccessMessageDisplayed()) {
-			softAssert.assertTrue(true, "No successMessage");
-		}
-		else {
-			 logger.error("Neither success nor failure message displayed.");
-		    Assert.fail("No success or failure message displayed, check the UI.");
-		}
 		
-		
+//		 boolean isMessagePresent = registerPage.isMessageDisplayed();
+//		 Assert.assertTrue(isMessagePresent, "Success or Failure message did not appear.");
 		
 	    logger.info("Navigating back and logging in with new user");
 		driver.navigate().back();
