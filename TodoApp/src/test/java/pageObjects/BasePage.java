@@ -22,31 +22,32 @@ public class BasePage {
 	}
 	
 	
-	public void waitForURLToBe(String expectedURL, int timeoutSeconds) {
-	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutSeconds));
-	    wait.until(ExpectedConditions.urlToBe(expectedURL));
-	}
+//	public void waitForURLToBe(String expectedURL, int timeoutSeconds) {
+//	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutSeconds));
+//	    wait.until(ExpectedConditions.urlToBe(expectedURL));
+//	}
+//	
+//	public void waitForElement(WebElement element,int timeoutSeconds ) {
+//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutSeconds));
+//		wait.until(ExpectedConditions.visibilityOf(eleme  nt));
+//	}
+//	
+//	public boolean waitForElementFluent(WebElement element, int timeoutSeconds, int polling) {
+//		
+//		try {
+//			
+//			Wait<WebDriver> fluentWait = new FluentWait<>(driver)
+//					.withTimeout(Duration.ofSeconds(timeoutSeconds))
+//					.pollingEvery(Duration.ofMillis(polling))
+//					.ignoring(NoSuchElementException.class);
+//					
+//					fluentWait.until(ExpectedConditions.visibilityOf(element));
+//					return true;
+//		}
+//		catch(TimeoutException e) {
+//			return false;
+//		}
+//			
+//	}
 	
-	public void waitForElement(WebElement element,int timeoutSeconds ) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutSeconds));
-		wait.until(ExpectedConditions.visibilityOf(element));
-	}
-	
-	public boolean waitForElementFluent(WebElement element, int timeoutSeconds, int polling) {
-		
-		try {
-			
-			Wait<WebDriver> fluentWait = new FluentWait<>(driver)
-					.withTimeout(Duration.ofSeconds(timeoutSeconds))
-					.pollingEvery(Duration.ofMillis(polling))
-					.ignoring(NoSuchElementException.class);
-					
-					fluentWait.until(ExpectedConditions.visibilityOf(element));
-					return true;
-		}
-		catch(TimeoutException e) {
-			return false;
-		}
-			
-	}
 }

@@ -12,10 +12,10 @@
   	<parameter name="browser" value="chrome"/>
     <classes>
       
-      <!--    <class name="testCases.LoginTestDDT"/>     -->
+      <!--    <class name="testCases.LoginTestDDT"/> <class name="testCases.EndToEndTestCase"/>     -->
 
 
-<class name="testCases.EndToEndTestCase"/>
+<class name="testCases.RegisterTest"/>
 
     </classes>
   </test> <!-- Test -->

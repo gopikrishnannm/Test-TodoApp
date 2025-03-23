@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.EndToEndTestCase">
+      <class name="testCases.RegisterTest">
         <methods>
-          <include name="verifyE2EFuncionality"/>
           <include name="setup"/>
+          <include name="registerFunctionality"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- testCases.EndToEndTestCase -->
+      </class> <!-- testCases.RegisterTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

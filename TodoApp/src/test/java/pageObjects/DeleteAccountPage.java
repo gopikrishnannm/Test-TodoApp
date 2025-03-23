@@ -24,16 +24,16 @@ public class DeleteAccountPage extends BasePage{
 	public void clickDeleteButton() {
 		btnDelete.click();
 	}	
-	public boolean isDeleted(String url) {
-		
-		try {
-			waitForURLToBe(url, 10);
-			return driver.getCurrentUrl().equals(url);
-		}
-		catch(TimeoutException e) {
-			return false;
-		}
-
-	}
+//	public boolean isDeleted(String url) {
+//		
+//		try {
+//			waitForURLToBe(url, 10);
+//			return driver.getCurrentUrl().equals(url);
+//		}
+//		catch(TimeoutException e) {
+//			return false;
+//		}
+//
+//	}
 
 }

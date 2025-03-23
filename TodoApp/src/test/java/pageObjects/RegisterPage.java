@@ -3,6 +3,7 @@ package pageObjects;
 import java.time.Duration;
 import java.util.NoSuchElementException;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -25,58 +26,39 @@ public class RegisterPage extends BasePage{
 	@FindBy(xpath = "//button[text()='Register']")
 	WebElement btnRegister;
 	
-	@FindBy(className = "success-message")
-	WebElement successMsg;
+	@FindBy(xpath = "//div[@class='success-message' or @class='failure-message']")
+	WebElement msg;
 	
-	@FindBy(className = "failure-message")
-	WebElement failureMsg;
+	@FindBy(xpath = "//div[@class='error-message']")
+	WebElement errorMsg;
 	
-	public void setUsername(String username){
-		txtUsername.sendKeys(username);	
+	public void setUsername(String username) {
+	    txtUsername.sendKeys(Keys.CONTROL + "a", Keys.DELETE); // Clears input field properly
+	    txtUsername.sendKeys(username);
 	}
-	
+
 	public void setPassword(String password) {
-		txtPassword.sendKeys(password);
+	    txtPassword.sendKeys(Keys.CONTROL + "a", Keys.DELETE); // Clears input field properly
+	    txtPassword.sendKeys(password);
 	}
-	
+
 	public void clickRegister() {
 		btnRegister.click();
-	}
-	
-//	public boolean isMessageDisplayed() {
-//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-//		boolean isSuccessMessagePresent = wait.until(ExpectedConditions.or(
-//	            ExpectedConditions.visibilityOf(successMsg),
-//	            ExpectedConditions.visibilityOf(failureMsg)
-//	        ));
-//		return isSuccessMessagePresent;
-//	}
+	}	
+    public String getMessage() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        try {
+            wait.until(ExpectedConditions.visibilityOf(msg));
+            return msg.getText();
+        } catch (TimeoutException e) {
+            return "";  // If no message appears, return empty string
+        }
+    }
 
-	
-//	public boolean isSuccessMessageDisplayed() {
-//		try {
-//			waitForElementFluent(successMsg, 3, 300);
-//			return successMsg.isDisplayed();
-//		}
-//		catch(TimeoutException | NoSuchElementException e ) {
-//			return false;
-//		}
-//	}
-//	
-	public boolean isFailureMessageDisplayed() {
-		
-		try {
-			waitForElement(failureMsg, 5);
-			return true;
-		}
-		catch(TimeoutException | NoSuchElementException e) {
-			return false;
-		}
-	}
-
-
-
-
+    public void waitForMessageToDisappear() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.invisibilityOf(msg));
+    }
 	
 
 }

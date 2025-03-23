@@ -59,14 +59,14 @@ public class ExtentReportManager implements ITestListener{
 	public void onTestSuccess(ITestResult result) {
 		test = extent.createTest(result.getTestClass().getName());
 		test.assignCategory(result.getMethod().getGroups());
-		test.log(Status.PASS, result.getName()+"Got Successfully Executed");
+		test.log(Status.PASS, result.getName()+" Got Successfully Executed");
 	}
 	
 	public void onTestFailure(ITestResult result) {
 		test = extent.createTest(result.getTestClass().getName());
 		test.assignCategory(result.getMethod().getGroups());
 		
-		test.log(Status.FAIL, result.getName()+"Got Failed");
+		test.log(Status.FAIL, result.getName()+" Got Failed");
 		test.log(Status.INFO, result.getThrowable().getMessage());
 		
 		try {
